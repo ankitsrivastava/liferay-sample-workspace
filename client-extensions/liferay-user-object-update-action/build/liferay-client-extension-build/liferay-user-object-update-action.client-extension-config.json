@@ -1,0 +1,38 @@
+{
+  "com.liferay.oauth2.provider.configuration.OAuth2ProviderApplicationUserAgentConfiguration~liferay-user-object-action-spring-boot-oauth-application-user-agent" : {
+    ".serviceAddress" : "localhost:58081",
+    ".serviceScheme" : "http",
+    ":configurator:policy" : "force",
+    "baseURL" : "${portalURL}/o/liferay-user-object-update-action",
+    "buildTimestamp" : 1714017956904,
+    "description" : "",
+    "dxp.lxc.liferay.com.virtualInstanceId" : "default",
+    "homePageURL" : "$[conf:.serviceScheme]://$[conf:.serviceAddress]",
+    "name" : "Liferay User Object Update Action Spring Boot OAuth Application User Agent",
+    "projectId" : "liferayuserobjectupdateaction",
+    "projectName" : "liferay-user-object-update-action",
+    "properties" : [ ],
+    "scopes" : [ "Liferay.Headless.Admin.User.everything" ],
+    "sourceCodeURL" : "",
+    "type" : "oAuthApplicationUserAgent",
+    "typeSettings" : [ ".serviceScheme=http", "scopes=Liferay.Headless.Admin.User.everything", ".serviceAddress=localhost:58081" ],
+    "webContextPath" : "/liferay-user-object-update-action"
+  },
+  "com.liferay.object.internal.configuration.FunctionObjectActionExecutorImplConfiguration~liferay-user-object-update-action" : {
+    ":configurator:policy" : "force",
+    "baseURL" : "${portalURL}/o/liferay-user-object-update-action",
+    "buildTimestamp" : 1714017956904,
+    "description" : "",
+    "dxp.lxc.liferay.com.virtualInstanceId" : "default",
+    "name" : "Liferay User Object Update Action",
+    "oAuth2ApplicationExternalReferenceCode" : "liferay-user-object-action-spring-boot-oauth-application-user-agent",
+    "projectId" : "liferayuserobjectupdateaction",
+    "projectName" : "liferay-user-object-update-action",
+    "properties" : [ ],
+    "resourcePath" : "/object/action/user",
+    "sourceCodeURL" : "",
+    "type" : "objectAction",
+    "typeSettings" : [ "oAuth2ApplicationExternalReferenceCode=liferay-user-object-action-spring-boot-oauth-application-user-agent", "resourcePath=/object/action/user" ],
+    "webContextPath" : "/liferay-user-object-update-action"
+  }
+}

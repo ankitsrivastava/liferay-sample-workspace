@@ -1,0 +1,14 @@
+assemble:
+    - fromTask: bootJar
+liferay-user-object-action-spring-boot-oauth-application-user-agent:
+    .serviceAddress: localhost:58081
+    .serviceScheme: http
+    name: Liferay User Object Update Action Spring Boot OAuth Application User Agent
+    scopes:
+        - Liferay.Headless.Admin.User.everything
+    type: oAuthApplicationUserAgent
+liferay-user-object-update-action:
+    name: Liferay User Object Update Action
+    oAuth2ApplicationExternalReferenceCode: liferay-user-object-action-spring-boot-oauth-application-user-agent
+    resourcePath: /object/action/user
+    type: objectAction
